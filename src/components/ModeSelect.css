@@ -1,0 +1,40 @@
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    #4caf50,
+    #2e8b57
+  );
+  color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s, background-image 0.5s,
+    opacity 0.5s;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  white-space: nowrap;
+  margin: 40px 0;
+}
+
+/* Add spacing between buttons */
+button + button {
+  margin-left: 5%;
+}
+
+button:hover {
+  transform: translateY(-3px); /* Lift the button up slightly on hover, 3D effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+}

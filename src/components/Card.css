@@ -1,0 +1,17 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  max-width: 300px;
+}
+
+.card-content.hidden #back {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.card-content:not(.hidden) #back {
+  opacity: 0;
+}
